@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/tvTituloImc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de IMC"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/etPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso (ex: 70.5 kg)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <EditText
+        android:id="@+id/etAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altura (ex: 1.75 m)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <Button
+        android:id="@+id/btnCalcularImc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvResultadoImc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seu IMC aparecerá aqui"
+        android:textSize="18sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/imgStatusImc"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Status do IMC"
+        android:scaleType="centerInside"
+        android:visibility="visible" />
+
+</LinearLayout>
